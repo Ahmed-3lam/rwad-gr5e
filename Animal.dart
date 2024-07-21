@@ -1,18 +1,18 @@
 class Animal {
-  static Animal? _instance = null;
+  String? _name;
 
-  Animal._();
-
-  static Animal getInstance() {
-    if (_instance == null) {
-      _instance = Animal._();
+  void setName(String name) {
+    if (name.length > 10) {
+      _name = name;
+    } else {
+      print("Name should be more than 10 letters");
     }
-    return _instance!;
-  }
 
-  void printMyName() {
-    print("Ahmed");
+   
   }
+   String? getName() {
+      return _name ;
+    }
 }
 
 
