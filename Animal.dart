@@ -1,20 +1,16 @@
-class Animal {
-  String? _name;
-
-  void setName(String name) {
-    if (name.length > 10) {
-      _name = name;
-    } else {
-      print("Name should be more than 10 letters");
-    }
-
-   
+abstract class Animal {
+  /// No Object
+  /// Abstract Method ( should be implemented)
+  void setName();
+  void setName2() {
+    print("Hello");
   }
-   String? getName() {
-      return _name ;
-    }
 }
 
+class Lion implements Animal {
+  @override
+  void setName() {}
 
-///static
-/// Singleton ( obejct )
+  @override
+  void setName2() {}
+}

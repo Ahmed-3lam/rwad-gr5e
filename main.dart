@@ -1,12 +1,16 @@
 import 'Animal.dart';
 
 void main() {
-  /// Encapsulation:
-  /// (1) Private public
-  /// (2) Set get
-  
-
-  Animal animal = Animal();
-  animal.setName("Ahmed Allam 22 hhh");
-  String name = animal.getName() ?? "Ahmed";
+  ///(1) Encapsulation:
+  /// (i) Private public
+  /// (ii) Set get
+  ///-------------------------
+  ///(2) Abstraction:
+  ///  - Abtract Class
+  ///  - Interface
+  /// (3) Polymorphism:
+  ///  (i)  overriding
+  ///  (ii) overloading (X)
+  /// (4) Inheritance
+ 
 }
