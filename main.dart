@@ -12,5 +12,7 @@ void main() {
   ///  (i)  overriding
   ///  (ii) overloading (X)
   /// (4) Inheritance
- 
+
+  Lion lion = Lion();
+  lion.setName();
 }

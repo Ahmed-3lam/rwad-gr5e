@@ -1,16 +1,29 @@
-abstract class Animal {
-  /// No Object
-  /// Abstract Method ( should be implemented)
-  void setName();
+ class Animal {
+  void setName(){
+
+  }
+  void setName2() {
+    print("Hello");
+  }
+}
+ abstract class Animal2 {
+  void setName(){
+
+  }
   void setName2() {
     print("Hello");
   }
 }
 
-class Lion implements Animal {
-  @override
-  void setName() {}
+ abstract class Animal3 {
+  void setName(){
 
-  @override
-  void setName2() {}
+  }
+  void setName2() {
+    print("Hello");
+  }
+}
+
+class Lion extends Animal implements Animal2,Animal3 {
+
 }
